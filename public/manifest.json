@@ -1,6 +1,6 @@
 {
-    "name": "D3 Treemap",
-    "description": "D3 Treemap",
+    "name": "ipfsStatViewer",
+    "description": "Firefox Add-On to visualize the data saved on a users local ipfs node",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
