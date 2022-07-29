@@ -21,7 +21,7 @@ import "./App.css"; // Don't forget to port this css file too, if you want the r
 // Note: Remove mock data if it is not needed.
 
 /**
- * @type {IFPSResponse}
+ * @type {IPFSResponse}
  */
 // const mockIPFSResponse = {
 //   Entries: [
