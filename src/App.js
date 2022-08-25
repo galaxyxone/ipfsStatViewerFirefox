@@ -91,13 +91,15 @@ function fetchJSONHandler(response) {
  * Note: This is needed in code to debounce resize event.
  */
 
-// connect to default API address http://localhost:5001
-
-const client = create()
 
 
 // ------------------------------------------------------------------------
 
+// connect to default API address http://localhost:5001
+
+const client = create()
+
+// ------------------------------------------------------------------------
 
 function debounce(func) {
     let timer;
@@ -123,6 +125,7 @@ const transformIPFSResponse = (data) => {
     }
 
     // We are given data for some node, therefore construct children for it from the given entries.
+
     const children = entries
         .filter((entry) => entry.Size !== 0)
         .map((entry) => ({
