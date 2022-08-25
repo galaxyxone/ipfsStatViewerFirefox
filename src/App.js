@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TreeMapGroup } from "./components/TreeMap";
-import { }
+import { create } from 'ipfs-http-client'
 
 import "./App.css"; // Don't forget to port this css file too, if you want the resize and styles to work correctly.
 
@@ -90,6 +90,15 @@ function fetchJSONHandler(response) {
  *
  * Note: This is needed in code to debounce resize event.
  */
+
+// connect to default API address http://localhost:5001
+
+const client = create()
+
+
+// ------------------------------------------------------------------------
+
+
 function debounce(func) {
     let timer;
     return function (...args) {
