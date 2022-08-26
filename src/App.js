@@ -123,7 +123,7 @@ function App() {
     // You can do something like this for getting data from the IPFS API.
     useEffect(() => {
         function getIPFSFiles() {
-            fetch("http://127.0.0.1:5001/api/v0/files/ls?long=true", {
+            fetch("http://127.0.0.1:5001/api/v0/files/ls?arg=/&long", {
                 method: "POST",
             })
                 .then(fetchJSONHandler)
