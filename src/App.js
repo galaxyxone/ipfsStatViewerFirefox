@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TreeMapGroup } from "./components/TreeMap";
-import { create } from 'ipfs-http-client'
 
 import "./App.css"; // Don't forget to port this css file too, if you want the resize and styles to work correctly.
 
@@ -22,7 +21,7 @@ import "./App.css"; // Don't forget to port this css file too, if you want the r
 // Note: Remove mock data if it is not needed.
 
 /**
- * @type {IPFSResponse}
+ * @type {IFPSResponse}
  */
 // const mockIPFSResponse = {
 //   Entries: [
@@ -90,17 +89,6 @@ function fetchJSONHandler(response) {
  *
  * Note: This is needed in code to debounce resize event.
  */
-
-
-
-// ------------------------------------------------------------------------
-
-// connect to default API address http://localhost:5001
-
-const client = create()
-
-// ------------------------------------------------------------------------
-
 function debounce(func) {
     let timer;
     return function (...args) {
@@ -117,7 +105,6 @@ function debounce(func) {
  * @param {IPFSResponse} data
  * @returns {{ children: Array }}
  */
-
 const transformIPFSResponse = (data) => {
     const entries = data?.Entries;
 
@@ -126,7 +113,6 @@ const transformIPFSResponse = (data) => {
     }
 
     // We are given data for some node, therefore construct children for it from the given entries.
-
     const children = entries
         .filter((entry) => entry.Size !== 0)
         .map((entry) => ({
@@ -188,7 +174,18 @@ function App() {
         getIPFSFiles();
     }, []);
 
-  
+    return (
+        <div ref={containerRef} className="graph-container">
+            {dimensions && ( // Remove this if you want to see the graph without resize feature.
+                <TreeMapGroup
+                    width={dimensions.width}
+                    height={dimensions.height}
+                    transform={transformIPFSResponse}
+                    data={IPFSFiles} // Use this if fetching data from node.
+                />
+            )}
+        </div>
+    );
 }
 
 export default App;
