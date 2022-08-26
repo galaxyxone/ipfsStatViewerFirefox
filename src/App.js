@@ -23,52 +23,7 @@ import "./App.css"; // Don't forget to port this css file too, if you want the r
 /**
  * @type {IFPSResponse}
  */
-// const mockIPFSResponse = {
-//   Entries: [
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "first.png",
-//       Size: 768403,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "second.jpeg",
-//       Size: 0,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "third.pdf",
-//       Size: 1768403,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "folder",
-//       Size: 3768403,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "folder2",
-//       Size: 3768403,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "file.jpeg",
-//       Size: 3768403,
-//       Type: 0,
-//     },
-//     {
-//       Hash: "QmcAm5PngkrfB5Ajea5kKAWE5d6VSpKKTYaKZNULgAPXWv",
-//       Name: "file.pdf",
-//       Size: 1768403,
-//       Type: 0,
-//     },
-//   ],
-// };
+
 
 // ************************ Graph Utility ************************
 // NOTE: This section should be moved to utility file for cleaner code.
