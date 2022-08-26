@@ -117,6 +117,7 @@ function debounce(func) {
  * @param {IPFSResponse} data
  * @returns {{ children: Array }}
  */
+
 const transformIPFSResponse = (data) => {
     const entries = data?.Entries;
 
