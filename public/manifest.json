@@ -1,8 +1,9 @@
 {
+    "manifest_version": 2,
     "name": "ipfsStatViewerFirefox",
     "description": "Firefox Add-On to visualize the data saved on a users local ipfs node",
-    "version": "1.0",
-    "manifest_version": 2,
+    "version": "1.1",
+    "icons": { "48":"src/icon.png"},
     "browser_action": {
         "default_popup": "index.html",
         "default_title": "Open the popup"
