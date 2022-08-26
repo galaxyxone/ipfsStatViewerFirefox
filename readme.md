@@ -48,7 +48,15 @@ As as you have IPFS running, it should work without issue-
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 
-## This worked
+## Sudo way
+
+```
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin ‘[“http://webui.ipfs.io.ipns.localhost:48084”, “http://localhost:3000”, “http://127.0.0.1:5001”, “https://webui.ipfs.io”, “chrome-extension://*“]’
+```
+
+
+
+# This worked(safer)
 
 ```
  `ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"`
