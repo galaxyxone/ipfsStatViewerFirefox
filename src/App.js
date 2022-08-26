@@ -32,6 +32,10 @@ import "./App.css"; // Don't forget to port this css file too, if you want the r
  * @param {Response} response
  * @description Returns a json parsed promise if the response succeeds, otherwise throws an error with status text.
  */
+
+
+
+
 function fetchJSONHandler(response) {
     if (!response.ok) {
         throw Error(response.statusText);
@@ -142,5 +146,7 @@ function App() {
         </div>
     );
 }
+
+
 
 export default App;
