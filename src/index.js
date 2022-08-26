@@ -6,6 +6,6 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 
+// CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 const cors = require('cors')
-
 App.arguments(cors())
