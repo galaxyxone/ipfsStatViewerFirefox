@@ -48,6 +48,12 @@ As as you have IPFS running, it should work without issue-
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 
+## This worked
+
+```
+ `ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"`
+```
+
 ## Future 
 
 - FUTURE: Add more visualizations (pie chart and more)

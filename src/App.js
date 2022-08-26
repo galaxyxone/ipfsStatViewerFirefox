@@ -117,6 +117,7 @@ function debounce(func) {
  * @param {IPFSResponse} data
  * @returns {{ children: Array }}
  */
+
 const transformIPFSResponse = (data) => {
     const entries = data?.Entries;
 
@@ -187,18 +188,7 @@ function App() {
         getIPFSFiles();
     }, []);
 
-    return (
-        <div ref={containerRef} className="graph-container">
-            {dimensions && ( // Remove this if you want to see the graph without resize feature.
-                <TreeMapGroup
-                    width={dimensions.width}
-                    height={dimensions.height}
-                    transform={transformIPFSResponse}
-                    data={IPFSFiles} // Use this if fetching data from node.
-                />
-            )}
-        </div>
-    );
+  
 }
 
 export default App;
