@@ -65,7 +65,7 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin ‘[“http://web
 ```
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.ipfs.io.ipns.localhost:48084", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io", "chrome-extension://leoogniilogpecgamlbafoajfcaoddja"]'
 ```
-### https://stackoverflow.com/questions/52298691/getting-typeerror-caller-callee-and-arguments-properties-may-not-be-acc
+### Side Issue #2 https://stackoverflow.com/questions/52298691/getting-typeerror-caller-callee-and-arguments-properties-may-not-be-acc
 
 ## Future 
 
