@@ -68,7 +68,9 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.i
 ### Side Issue #2 https://stackoverflow.com/questions/52298691/getting-typeerror-caller-callee-and-arguments-properties-may-not-be-acc
 (this could be the issue too, maybe) https://blog.airbrake.io/blog/http-errors/405-method-not-allowed 
 
-### Does it make a difference what fetch requests we should use on browsers? The app runs on most mac/chrome devices and many linux devices but for some reason, it seem as there is a issue with many boxes configurations... This should not be the case as this is all running in the browser... 
+### Recent Questions
+
+Does it make a difference what fetch requests we should use on browsers? The app runs on most mac/chrome devices and many linux devices but for some reason, it seem as there is a issue with many boxes configurations... This should not be the case as this is all running in the browser... 
 
 ## Future 
 
