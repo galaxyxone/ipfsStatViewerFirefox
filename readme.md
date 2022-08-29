@@ -59,11 +59,9 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin ‘[“http://web
 # This worked(safer)
 
 ```
- `ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"`
-```
 
-```
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.ipfs.io.ipns.localhost:48084", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io", "chrome-extension://leoogniilogpecgamlbafoajfcaoddja"]'
+
 ```
 ### CORS issue fix (do this asap)
 ### Recent Questions
