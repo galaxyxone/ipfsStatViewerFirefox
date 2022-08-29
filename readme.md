@@ -67,7 +67,7 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.i
 
 Does it make a difference what fetch requests we should use on browsers? The app runs on most mac/chrome devices and many linux devices but for some reason, it seem as there is a issue with many boxes configurations... This should not be the case as this is all running in the browser... 
 
-How do you get info routing from ipfs working on boxes of all types(linux, mac, windows) I'm still having issues with some linux boxes and their respective ipfs webui's. Configurations are setup correctly I BELIEVE>> still no borrito...:(
+How do you get info routing from ipfs working on boxes of all types(linux, mac, windows) I'm still having issues with some linux boxes and their respective ipfs webui's. Configurations are setup correctly I BELIEVE>> still no borrito...:( Still looking for the problem... 
 
 ## Future 
 
