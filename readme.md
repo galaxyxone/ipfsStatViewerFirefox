@@ -56,11 +56,11 @@ As as you have IPFS running, it should work without issue-
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.ipfs.io.ipns.localhost:48084", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io", "chrome-extension://leoogniilogpecgamlbafoajfcaoddja"]'
 ```
 
-## Future 
+## Working on currently 
 
-- FUTURE: Add more visualizations (pie chart and more)
-- FUTURE: More supported file extensions
-- FUTURE: Pie-chart added visualization with file extensions pinned
+
+- More supported file extensions
+- allowing CORS by default(cross origin resource sharing)
 
 
 ## License
