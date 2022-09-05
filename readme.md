@@ -48,25 +48,19 @@ As as you have IPFS running, it should work without issue-
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 
-## Sudo way
-
-```
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin ‘[“http://webui.ipfs.io.ipns.localhost:48084”, “http://localhost:3000”, “http://127.0.0.1:5001”, “https://webui.ipfs.io”, “chrome-extension://*“]’
-```
 
 
-
-### In specific cases, this command is needed to get the treemap to function correctly(still figuring out a better solution)
+### In specific cases, this command is needed to get the treemap to function correctly- 
 
 ```
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://webui.ipfs.io.ipns.localhost:48084", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io", "chrome-extension://leoogniilogpecgamlbafoajfcaoddja"]'
 ```
 
-## Future 
+## Working on currently 
 
-- FUTURE: Add more visualizations (pie chart and more)
-- FUTURE: More supported file extensions
-- FUTURE: Pie-chart added visualization with file extensions pinned
+
+- More supported file extensions
+- allowing CORS by default(cross origin resource sharing)
 
 
 ## License
